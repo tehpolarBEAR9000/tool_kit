@@ -6,6 +6,7 @@ Tool_kit refers to custom tooling for common tasks on AWS like logging and conne
 **Logger_CloudWatch**  
 -- Creates a Log Group and Log Stream  
 -- Creates an AWS Client for writing to the created Log Group and Log Stream  
+
 Usage example from PowerShell:  
 
 ```PowerShell
@@ -14,7 +15,7 @@ $logContainer = $output.GenerateNamingContainer()
 $output.BuildLogFactory($logContainer)
 $output.CreateLogMessage($logContainer, "sending custom log message to AWS CloudWatch")
 ```
-**Single-Signon**
+**Single-Signon**  
 -- Creates an AWS Client for authenticating to AWS, using your profile from local AWS Config file  
 
 Usage example from PowerShell:  
