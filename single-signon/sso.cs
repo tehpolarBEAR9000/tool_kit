@@ -18,7 +18,7 @@ public class BuildCredentials
             throw new Exception($"Failed to find the {profileName} profile");
 
         var ssoCredentials = credentials as SSOAWSCredentials; 
-        ssoCredentials.Options.ClientName = "CRA_SSO_App";
+        ssoCredentials.Options.ClientName = "SSO_App";
         ssoCredentials.Options.SsoVerificationCallback = args =>
         
         {
