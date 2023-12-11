@@ -15,8 +15,8 @@ $output.BuildLogFactory($logContainer)
 $output.CreateLogMessage($logContainer, "sending custom log message to AWS CloudWatch")
 ```
 **Single-Signon**
--- 
--- 
+-- Creates an AWS Client for authenticating to AWS, using your profile from local AWS Config file  
+
 Usage example from PowerShell:  
 
 ```PowerShell
@@ -25,4 +25,8 @@ $credentials.CreateCredentialStore("user/path/to/aws/config/file","profile_name"
 ```
 ### Developing Tools  
 AMI_Takeover
---
+-- Creates a map of all EC2s, their associated volumes, and security groups  
+-- Applies Customer KMS to AMI snapshots  
+-- Creates a share using IAM permissions  
+-- Creates EC2s on target VPC / Tenant  
+-- Applies security groups  
